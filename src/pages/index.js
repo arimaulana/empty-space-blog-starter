@@ -29,12 +29,23 @@ function LatestArticle() {
 		`
 	);
 
+	let contentData = data.allMarkdownRemark.edges;
+
+	// Handle content, if already have content, dont include default content in latest article
+	const TOTAL_DEFAULT_CONTENT = 1;
+	if (contentData.length > TOTAL_DEFAULT_CONTENT) {
+		contentData = contentData.filter((content) => {
+			let defaultSlug = ["___no-content-default-page"];
+			return defaultSlug.indexOf(content.node.fields.slug) < 0;
+		});
+	}
+
 	return (
 		<section className={indexStyle.latestArticle}>
 			<h3>Latest Articles</h3>
 			<hr />
 			<ul>
-				{data.allMarkdownRemark.edges.map((edge) => (
+				{contentData.map((edge) => (
 					<li key={edge.node.id}>
 						<h3>
 							<Link to={`/${edge.node.fields.slug}`}>
