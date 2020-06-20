@@ -25,6 +25,10 @@ module.exports = {
 				name: "Twitter",
 				link: "https://twitter.com/arimaulana_id",
 			},
+			{
+				name: "Email",
+				link: "mailto:maulana.ari@protonmail.com"
+			}
 		],
 		projects: [
 			{

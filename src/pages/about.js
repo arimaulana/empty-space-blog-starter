@@ -1,6 +1,6 @@
 import React from "react";
 import Layout from "../components/layout";
-import { useStaticQuery, graphql } from "gatsby";
+import { useStaticQuery, graphql, Link } from "gatsby";
 import Project from "../components/project";
 import AboutStyles from "./about.module.scss";
 
@@ -35,6 +35,13 @@ const About = () => {
 			<section className="about-me">
 				<h1>About Me</h1>
 				<p>{data.site.siteMetadata.about.description}</p>
+			</section>
+			<section className={AboutStyles.contacts}>
+				<h1>Contact</h1>
+				<p>You can contact me on :</p>
+				{data.site.siteMetadata.contacts.map((contact) => {
+					return <a href={contact.link}>{contact.name}</a>;
+				})}
 			</section>
 			<section>
 				<h1>Projects</h1>
