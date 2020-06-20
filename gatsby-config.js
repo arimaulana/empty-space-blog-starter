@@ -28,9 +28,9 @@ module.exports = {
 		],
 		projects: [
 			{
-				name: "Simple Personal Blog",
-				description: "Simple Personal Blog made with Gatsby.JS",
-				source: "https://github.com/arimaulana/simple-personal-blog",
+				name: "Empty Space Blog Starter",
+				description: "A simple personal blog starter made with Gatsby.JS",
+				source: "https://github.com/arimaulana/empty-space-blog-starter",
 				demo: "https://arimaulana.com",
 			},
 		],
