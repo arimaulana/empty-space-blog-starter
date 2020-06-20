@@ -1,0 +1,26 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 8px 0;
+
+    span {
+        font-size: x-large;
+    }
+
+    nav {
+        a {
+            margin-left: 16px;
+        }
+    }
+
+    a {
+        color: #444;
+
+        &:hover {
+            text-decoration: none;
+            color: #888;
+        }
+    }
+}

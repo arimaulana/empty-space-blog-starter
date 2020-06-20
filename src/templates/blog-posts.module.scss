@@ -1,0 +1,37 @@
+.post-header {
+	margin: 32px auto;
+
+	font-weight: 600;
+
+	h1 {
+		font-size: 1.5rem;
+	}
+}
+
+.post-tag {
+	a {
+		display: inline-block;
+		margin-top: 8px;
+		margin-right: 8px;
+
+        padding: 4px;
+        font-weight: normal;
+        background-color: #eee;
+		border-radius: 4px;
+
+		&:hover {
+			text-decoration: none;
+			background-color: #ddd;
+		}
+	}
+}
+
+.post-content {
+	margin: 32px auto;
+
+	text-align: justify;
+
+	p {
+		line-height: 1.8;
+	}
+}

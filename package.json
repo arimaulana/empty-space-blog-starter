@@ -1,0 +1,36 @@
+{
+  "name": "empty-space-blog-starter",
+  "version": "1.0.0",
+  "description": "Empty Space Blog Starter made with GatsbyJS",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
+  "author": "Ari Maulana <maulana.ari@protonmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arimaulana/empty-space-blog-starter"
+  },
+  "dependencies": {
+    "gatsby": "^2.23.6",
+    "gatsby-plugin-prettier-eslint": "^1.0.4",
+    "gatsby-plugin-react-helmet": "^3.3.4",
+    "gatsby-plugin-sass": "^2.3.4",
+    "gatsby-plugin-sharp": "^2.6.12",
+    "gatsby-plugin-web-font-loader": "^1.0.4",
+    "gatsby-remark-images": "^3.3.11",
+    "gatsby-source-filesystem": "^2.3.12",
+    "gatsby-transformer-remark": "^2.8.17",
+    "gatsby-transformer-sharp": "^2.5.5",
+    "node-sass": "^4.14.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-helmet": "^6.1.0"
+  }
+}

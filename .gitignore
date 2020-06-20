@@ -1,0 +1,7 @@
+node_modules
+.cache
+public
+
+content/*
+!content/README.md
+!content/default
