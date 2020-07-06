@@ -37,6 +37,12 @@ module.exports = {
 				source: "https://github.com/arimaulana/empty-space-blog-starter",
 				demo: "https://arimaulana.com",
 			},
+			{
+				name: "Komentar",
+				description: "A simple commenting system app for static site written in typescript",
+				source: "https://github.com/arimaulana/komentar",
+				demo: ""
+			}
 		],
 	},
 	plugins: [

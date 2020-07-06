@@ -12,9 +12,11 @@ export default function Project({ name, description, source, demo }) {
 				<a href={source} target="_blank" rel="noreferrer">
 					Source
 				</a>
-				<a href={demo} target="_blank" rel="noreferrer">
-					Demo
-				</a>
+				{demo ? (
+					<a href={demo} target="_blank" rel="noreferrer">
+						Demo
+					</a>
+				) : null}
 			</section>
 		</section>
 	);
